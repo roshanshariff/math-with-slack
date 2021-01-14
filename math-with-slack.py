@@ -409,9 +409,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 if args.mathjax_tex_options == "default": 
     mathjax_tex_options = """{
-      packages: {'[+]': ['noerrors', 'noundefined']},
-      inlineMath: [['$', '$']],
-      displayMath: [['$$', '$$']],
+      packages: {'[+]': ['noerrors', 'noundefined', 'ams', 'color', 'boldsymbol']},
+      inlineMath: [['$$', '$$'], ['\\\\(', '\\\\)']],
+      displayMath: [['$$$', '$$$'], ['\\\\[', '\\\\]']],
     }"""
 elif os.path.isfile(args.mathjax_tex_options):
     with open(args.mathjax_tex_options, "r") as f:

@@ -210,9 +210,7 @@ check **Format messages with markup**. This should solve the problem.
 
 ## How do I get my math rendered?
 
-As you do in TeX, use `$ ... $` for inline math and `$$ ... $$` for display-style math. 
-If you need to write a lot of dollar-signs in a message and want to prevent rendering,
-use backslash to escape them: `\$`.
+Use `$$ ... $$` or `\( ... \)` for inline math and `$$$ ... $$$` or `\[ ... \]` for display-style math.
 
 Note that only users with MathJax injected in their client will see the rendered version of your math.
 Users with the standard client will see the equations just as you wrote them 
